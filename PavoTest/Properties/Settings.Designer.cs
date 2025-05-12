@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PavoDeneme.Properties
+namespace PavoTest.Properties
 {
 
 
