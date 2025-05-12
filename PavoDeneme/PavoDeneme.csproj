@@ -83,7 +83,24 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models.cs" />
+    <Compile Include="Models\AbandonOptions.cs" />
+    <Compile Include="Models\AddedSaleItem.cs" />
+    <Compile Include="Models\AdditionalInfo.cs" />
+    <Compile Include="Models\AllowedPaymentMediator.cs" />
+    <Compile Include="Models\CustomerParty.cs" />
+    <Compile Include="Models\Models.cs" />
+    <Compile Include="Models\PaymentInformation.cs" />
+    <Compile Include="Models\PriceEffect.cs" />
+    <Compile Include="Models\PrintableItem.cs" />
+    <Compile Include="Models\PrintableItemChildren.cs" />
+    <Compile Include="Models\PrintableLine.cs" />
+    <Compile Include="Models\PrintableList.cs" />
+    <Compile Include="Models\PrintableSpace.cs" />
+    <Compile Include="Models\PrintableText.cs" />
+    <Compile Include="Models\ReceiptInformation.cs" />
+    <Compile Include="Models\Sale.cs" />
+    <Compile Include="Models\TransactionData.cs" />
+    <Compile Include="Models\TransactionHandle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -111,6 +128,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
