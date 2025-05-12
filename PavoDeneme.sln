@@ -5,7 +5,7 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PavoDeneme", "PavoDeneme\PavoDeneme.csproj", "{0FF60CE8-DA27-4473-98AE-995E492E9DA4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PavoRestClient", "PavoRestClient\PavoRestClient.csproj", "{C341A598-1ACC-4E9C-B36C-B1DFCE11BEE4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PavoRestClient", "PavoRestClient\PavoRestClient.csproj", "{649B85AA-E0FF-47CB-8320-DF7C7ADEC0A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{0FF60CE8-DA27-4473-98AE-995E492E9DA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FF60CE8-DA27-4473-98AE-995E492E9DA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FF60CE8-DA27-4473-98AE-995E492E9DA4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C341A598-1ACC-4E9C-B36C-B1DFCE11BEE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C341A598-1ACC-4E9C-B36C-B1DFCE11BEE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C341A598-1ACC-4E9C-B36C-B1DFCE11BEE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C341A598-1ACC-4E9C-B36C-B1DFCE11BEE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{649B85AA-E0FF-47CB-8320-DF7C7ADEC0A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{649B85AA-E0FF-47CB-8320-DF7C7ADEC0A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{649B85AA-E0FF-47CB-8320-DF7C7ADEC0A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{649B85AA-E0FF-47CB-8320-DF7C7ADEC0A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
