@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using System.Diagnostics;
 using System.Net;
 using System.Text.Json.Serialization;
+using PavoDeneme.Models;
 
 namespace PavoDeneme
 {
@@ -30,22 +31,53 @@ namespace PavoDeneme
         {
             var url = "https://192.168.1.203:4567/Pairing";
 
-            // Nesneyi oluştur
-
-            var payload = new
+            // Models.cs'deki sınıfları kullanarak nesne oluştur
+            var payload = new TransactionData
             {
-                TransactionHandle = new
+                TransactionHandle = new TransactionHandle
                 {
                     SerialNumber = "PAV860034877",
                     TransactionDate = DateTime.Now,
                     TransactionSequence = 176,
                     Fingerprint = "test2"
+                },
+                Sale = new Sale
+                {
+                    RefererApp = "Harici Uygulama",
+                    RefererAppVersion = "1.0.0",
+                    MainDocumentType = 1,
+                    GrossPrice = 20,
+                    TotalPrice = 20,
+                    SendPhoneNotification = false,
+                    SendEMailNotification = false,
+                    AddedSaleItems = new List<AddedSaleItem>
+                    {
+                        new AddedSaleItem
+                        {
+                            Name = "Gofret",
+                            IsGeneric = false,
+                            UnitCode = "KGM",
+                            TaxGroupCode = "KDV18",
+                            ItemQuantity = 1,
+                            UnitPriceAmount = 20,
+                            GrossPriceAmount = 20,
+                            TotalPriceAmount = 20
+                        }
+                    },
+                    PaymentInformations = new List<PaymentInformation>
+                    {
+                        new PaymentInformation
+                        {
+                            Mediator = 1,
+                            Amount = 20
+                        }
+                    }
                 }
             };
 
-            CallPairingAsync();
-            
-            
+            //CallPairingAsync();
+            //CallCompleteSaleAsync();
+            PostAsync(url, payload);
         }
 
         private static async Task CallPairingAsync()
@@ -161,15 +193,7 @@ namespace PavoDeneme
 
 
 
-    public class TransactionHandle
-    {
-        public string SerialNumber { get; set; }
-        public DateTime TransactionDate { get; set; }
-        public int TransactionSequence { get; set; }
-        public string Fingerprint { get; set; }
-
-       
-    }
+   
 
    
 
