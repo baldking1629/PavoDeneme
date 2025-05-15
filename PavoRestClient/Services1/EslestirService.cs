@@ -10,13 +10,13 @@ namespace PavoRestClient.Services1
     public class EslestirService
     {
 
-        private static async Task Eslestir(TransactionData transactionData)
+        public static async Task Eslestir(TransactionHandle transactionData)
         {
             var url = "https://192.168.1.203:4567/Pairing";
 
             //TransactionHandle nesnesi gönderilmeli
             //Uygulama ve cihazın eşlenmesi gereken durumda çalışmalı
-            TransactionData payload = transactionData;
+            TransactionHandle payload = transactionData;
 
             //Apiye istek attığımız yer
             await ApiPostIstegiService.PostAsync(url, payload);

@@ -9,9 +9,10 @@ namespace PavoRestClient.Services1
 {
     public class SatisGiderPusulasiService
     {
-        private static async Task SatisGiderPusulasi(TransactionData transactionData)
+        public static async Task SatisGiderPusulasi(TransactionData transactionData)
         {
             var url = "https://192.168.1.203:4567/CompleteSale";
+
 
             //TransactionHandle ve Sale nesnesi gönderilmeli
             //Sale nesnesindeki Orderno alanı satış iptal edilmek istendiği zaman kullanılmalı ve unique olmalı

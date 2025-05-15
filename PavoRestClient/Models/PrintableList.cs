@@ -5,6 +5,6 @@ namespace PavoDeneme.Models
     public class PrintableList : PrintableItem
     {
         public PrintableList() { type = "dList"; }
-        public List<PrintableItemChildren> children { get; set; }
+        //public List<PrintableItemChildren> children { get; set; }
     }
 } 

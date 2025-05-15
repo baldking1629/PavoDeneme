@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,8 +32,8 @@ namespace PavoRestClient.Services1
             {
                 var response = await client.PostAsync(url, content);
                 var responseContent = await response.Content.ReadAsStringAsync();
-
-                Console.WriteLine($"Response for {url}:");
+                System.IO.File.WriteAllText("sonuc.txt", responseContent);
+                string a =($"Response for {url}:");
                 if (response.IsSuccessStatusCode)
                 {
                     Console.WriteLine("Success! Response received:");
@@ -49,6 +50,7 @@ namespace PavoRestClient.Services1
             {
                 Console.WriteLine($"Request exception: {e.Message}");
             }
+          
         }
     }
 }
