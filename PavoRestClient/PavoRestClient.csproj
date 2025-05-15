@@ -46,6 +46,8 @@
     <Compile Include="Models\AdditionalInfo.cs" />
     <Compile Include="Models\AllowedPaymentMediator.cs" />
     <Compile Include="Models\CustomerParty.cs" />
+    <Compile Include="Models\ParcaliOdemeModel\CompleteStartSaleWithItemsRequest.cs" />
+    <Compile Include="Models\ParcaliOdemeModel\StartSaleWithItemsSale.cs" />
     <Compile Include="Models\PaymentInformation.cs" />
     <Compile Include="Models\PriceEffect.cs" />
     <Compile Include="Models\PrintableItem.cs" />
